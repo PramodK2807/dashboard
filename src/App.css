@@ -1,0 +1,204 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.logo span{
+  color: orange;
+}
+
+body{
+  background-color: #161c32;
+  color: white;
+}
+ul{
+  list-style: none;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav{
+  width: 200px;
+  height: 100vh;
+  background-color: #283046;
+  
+}
+
+.dashboard-container{
+  min-width: 540px;
+  /* width: 100%; */
+  margin: 20px;
+  
+}
+
+.overall{
+  background-color: #283046;
+  
+}
+.icon-logo{
+  margin: 20px !important;
+  background-color: white ;
+  color: black;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  font-weight: bold !important;
+}
+
+.icon-logo i{
+  font-size: 20px !important;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.entries-container{
+  padding: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+table{
+  width: 100%;
+}
+
+select{
+  min-width: 50px;
+  background-color: transparent;
+  padding: 5px 15px ;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 10px;
+}
+
+.input{
+  min-width: 50px;
+  background-color: transparent;
+  padding: 5px 15px ;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+select option{
+  background: none !important;
+  color: rgb(0, 0, 0);
+}
+table {
+  color: rgb(255, 255, 255) !important;
+  opacity: 01;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+border-color: inherit;
+border-style: none;
+border-width: 0;
+}
+
+thead{
+border-style: solid !important;
+border: 1px solid #cccccc7e !important;
+}
+
+.plateform{
+  display: flex;
+  flex-direction: column;
+}
+
+tr td{
+  text-align: center !important;
+}
+.plateform span{
+  text-align: left;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.pagination button{
+  background-color: transparent;
+  border: solid 1px rgba(202, 195, 195, 0.726);
+  color: white;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+}
+
+.pagination .active{
+  color: black;
+  background-color: white;
+}
+
+.rdrDefinedRangesWrapper{
+  display: none;
+}
+
+.rdrCalendarWrapper{
+  background-color: transparent;
+  border: solid 1px #ccc;
+  color: white;
+}
+
+.date-filter{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px){
+  .sidenav{
+      display: none;
+  }
+  table{
+      font-size: 14px;
+  }
+  .show{
+      width: 100%;
+  }
+
+  .date-filter{
+      width: 100%;
+  }
+ 
+
+}
+
+@media screen and (max-width: 890px){
+  .date-filter{
+      flex-direction: column;
+  }
+
+  .date-filter input{
+      width: 170px;
+      margin: 2px 0;
+  }
+}
